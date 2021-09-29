@@ -26,7 +26,7 @@ def get_product(lst: list) -> int:
 '''
 Returneaza CMMDC a doua numere x si y folosind primul algoritm.
 '''
-def get_cmmdc_v1(x, y):
+def get_cmmdc_v1(x: int, y: int) -> int:
     if y == 0:
         return x
     else:
@@ -36,12 +36,12 @@ def get_cmmdc_v1(x, y):
 '''
 Returneaza CMMDC a doua numere x si y folosind al doilea algoritm.
 '''
-def get_cmmdc_v2(x, y):
+def get_cmmdc_v2(x: int, y: int) -> int:
     return get_cmmdc_v2(abs(x-y), min(x, y)) if (x-y) else y
   
   
 def main():
-    
+
     #cerinta 1
     x = int(input("Introduceti un intreg pentru a verifica daca este prim:"))
     if is_prime(x):
